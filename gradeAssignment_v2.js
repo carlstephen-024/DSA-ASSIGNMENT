@@ -1,6 +1,8 @@
-let s = prompt("GRADE: ");
+//Carl Stephen M. Quilopras
 
-if (s >= 97) {
+let s = parseInt("GRADE: ");                                              //initializing the score/grade to s and prompting the user to enter their grade
+
+if (s >= 97) {                                                          //if, else if, and else statement for the evaluation of the grade input by the user
     console.log("Your equivalent Grade is “1.00” Excellent");
     console.log("Final Remark: HIGH PASS, Candidate for Cum Laude");
 } else if (s < 97 && s >= 94) {
@@ -34,3 +36,30 @@ if (s >= 97) {
     console.log("Your equivalent Grade is “5.00” Poor");
     console.log("Final Remark: FAILED, Needs Improvement");
 }
+/*
+let s = parseInt(prompt("GRADE: "), 10);                                                                         //initializing the score/grade to s and prompting the user to enter their grade
+
+console.log(                                                                                                     //print statement with ternary condition statements
+    s >= 97
+        ? 'Your equivalent Grade is "1.00" Excellent\nFinal Remark: HIGH PASS, Candidate for Cum Laude'
+        : s >= 94
+        ? 'Your equivalent Grade is "1.25" Excellent\nFinal Remark: HIGH PASS, Candidate for Cum Laude'
+        : s >= 90
+        ? 'Your equivalent Grade is "1.75" Above Average\nFinal Remark: HIGH PASS, Candidate for Cum Laude'
+        : s >= 88
+        ? 'Your equivalent Grade is "1.75" Above Average\nFinal Remark: AVERAGE PASS'
+        : s >= 85
+        ? 'Your equivalent Grade is "2.00" Average\nFinal Remark: AVERAGE PASS'
+        : s >= 82
+        ? 'Your equivalent Grade is "2.25" Average\nFinal Remark: AVERAGE PASS'
+        : s >= 79
+        ? 'Your equivalent Grade is "2.50" Below Average\nFinal Remark: LOW PASS'
+        : s >= 76
+        ? 'Your equivalent Grade is "2.75" Below Average\nFinal Remark: LOW PASS'
+        : s === 75
+        ? 'Your equivalent Grade is "3.00" Below Average\nFinal Remark: LOW PASS'
+        : s >= 72
+        ? 'Your equivalent Grade is "4.00" Poor\nFinal Remark: FAILED, Needs Improvement'
+        : 'Your equivalent Grade is "5.00" Poor\nFinal Remark: FAILED, Needs Improvement'
+);
+*/
